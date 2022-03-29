@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(218, 214, 214);
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.nav-list-menu-icon{
+    display: none;
+}
+
+
+.navbar{
+    height: 100px;
+    background-color: rgb(41, 39, 70);
+    
+}
+
+.navbar-box{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-list-subtext{
+    color:rgb(218, 214, 214) ;
+}
+.nav-list-subtext:hover{
+    color: white;
+    
+}
+.nav-list-menu{
+    display: flex;
+    justify-content: center;
+}
+.nav-list-item{
+    margin: 8px 25px;
+    font-size: 23px;
+    
+}
+.nav-list-item:hover{
+    width: 80px;
+    height: 50px;
+    padding: 10px;
+    /* background-color: aqua; */
+    background-image: url("./atom.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: right 17px top 2px;
+
+}
+.nav-list-link{
+    margin: 12px 0px;
+    border: 1px solid white;
+    /* background-color: rgb(26, 25, 48); */
+    border-radius: 45px;
+    padding: 10px 10px;
+    transition: 0.6s;
+}
+.nav-list-link:hover{
+    background-color: rgb(26, 25, 48);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1160px){
+    .container{
+        width: 900px;
+    }
+    .nav-list-itemm{
+        margin: 13px 0px;
+
+    }
+}
+
+@media(max-width:940px){
+    .container{
+        width: 800px;
+    }
+    .navbar{
+        height: 80px;
+    }
+    .nav-list-subtext{
+        font-size: 20px;
+    }
+    .nav-list-subtext:hover{
+        color: white;
+        
+    }
+    .nav-list-item{
+        margin: 4px 15px;
+        font-size: 15px;
+    }
+    .nav-list-itemm{
+        margin: 4px 10px;
+
+    }
+}
+
+@media(max-width:820px){
+    .container{
+        width: 700px;
+    }
+    .nav-list-menu{
+        display: none;
+    }
+    .nav-list-itemm{
+        display: none;
+    }
+    .nav-list-menu-icon{
+        display: block;
+        width: 45px;
+        height: 30px;
+    }
+    
+}
