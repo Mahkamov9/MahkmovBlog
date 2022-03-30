@@ -57,6 +57,7 @@ a{
     width: 80px;
     height: 50px;
     padding: 10px;
+    color: white;
     background-image: url("./atom.png");
     background-repeat: no-repeat;
     background-size: 40px;
@@ -84,7 +85,6 @@ a{
 }
 
 
-
 .right-text{
     font-size: 45px;
     color: white;
@@ -110,6 +110,8 @@ a{
     /* margin: 25px 0px; */
 }
 .right-link-item:hover{
+    /* box-shadow: 0.1px 0.1px 10px  white; */
+
     background-color: rgb(41, 39, 70);
     border: 2px solid rgb(41, 39, 70);
 
@@ -128,17 +130,197 @@ a{
     height: 550px;
 }
 
+/* -------------------------section----------------- */
+
+.section{
+    background-color: rgba(26, 25, 48, 0.925);
+    height: 1500px;
+}
+.section-navbar{
+    text-align: center;
+    position: relative;
+}
+/* .select-blog-icon{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 530px;
+
+} */
+.section-navbar{
+    display: flex;
+    flex-direction: column;
+}
+.select-blog-text{
+    padding: 35px;
+    font-size: 60px;
+    color: white;
+}
+.select-blog-link{
+    width: 160px;
+    height: 46px;
+    border: 1px solid white;
+    padding: 8px 22px;
+    border-radius: 28px;
+    font-size: 22px;
+    transition: 0.6s;
+}
+.select-blog-link::before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-image: url("./layers.png");
+    background-position: top 100% left 0%;
+    
+}
+.select-blog-link:hover{
+    background-color: rgb(26, 25, 48);
+    border: 1px solid rgb(26, 25, 48);
+}
+         /* section-center */
+.section-center-list{
+    width: 100%;
+    height: 230px;
+    margin: 75px 0px;
+    background-color: rgb(26, 25, 48);
+    display: flex;
+
+    
+}
+.section-center-list:hover{
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.205);
+    transition: 0.6s;
+}
+.section-center-list-img{
+    width: 310px;
+    height: 200px;
+    margin: 15px 25px;
+    border: 3px solid rgb(41, 39, 70);
+    
+}
+.section-center-list ul li p{
+    color: white;
+    margin: 35px 0px;
+    font-size: 21px;
+}
 
 
+/* ----------------main------------- */
 
+.main{
+    background-color: rgba(41, 39, 70, 0.938);
+    height: 860px;
+}
+.main-nav{
+    text-align: center;
+    padding: 45px;
+}
+.main-nav p{
+    font-size: 60px;
+    color: white;
+    margin: 30px 0px;
+}
+.main-nav p a{
+    font-size: 45px;
+    border: 1px solid white;
+    border-radius: 28px;
+    padding: 0px 15px;
+}
+.main-nav p a::after{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    /* padding-right: 50px; */
+    padding: 3px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-image: url("./keyboard-right-arrow-button.png");
+    background-position: top 100% right 0%;
+}
+.main-nav p a:hover{
+    background-color: rgba(41, 39, 70, 0.938);
+    border: 1px solid rgba(41, 39, 70, 0.938);
+    transition: 0.6s;
+}
 
+.main-center{
+    display: flex;
+    justify-content: space-between;
+}
+.main-center img{
+    width: 45%;
+    border: 5px solid rgba(41, 39, 70, 0.938);
+    /* margin: 100px; */
+}
 
+/* -----------strike---------------- */
 
+.strike{
+    background-color:  rgba(26, 25, 48, 0.925);
+    height: 280px;
+}
+.strike-box{
+    text-align: center;
+}
+.strike-box p{
+    color: white;
+    font-size: 60px;
+    padding: 35px 0px;    
+}
 
+.strike-form{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+.input-mail{
+    width: 400px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 28px;
+    outline: none;
+    padding-left: 25px;
+    margin: 0px 25px;
+}
+.strike-btn{
+    width: 130px;
+    height: 35px;
+    border-radius: 28px;
+    color: black;
+}
 
+/* --------footer */
 
-
-
+footer{
+    height: 100px;
+    background-color:  rgba(26, 25, 48, 0.925);
+    
+    
+}
+.footer-box{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-box p{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.918);
+}
+.footer-box p:hover{
+    color: white;
+}
+.footer-box ul{
+    display: flex;
+}
+.footer-box ul li{
+    margin: 12px 15px;
+}
 
 
 @media(max-width:1160px){
@@ -158,6 +340,40 @@ a{
     .header-left-img{
         position: absolute;
         left: 55%;
+    }
+
+    /* section */
+
+    .section{
+        height: 1330px;
+    }
+    .select-blog-text{
+        font-size: 50px;
+    }
+    .select-blog-link{
+        font-size: 22px;
+    }
+    .section-center-list{
+        width: 100%;
+        height: 200px;
+        margin: 75px 0px;
+        background-color: rgb(26, 25, 48);
+        display: flex;
+    
+        
+    }
+    
+    .section-center-list-img{
+        width: 280px;
+        height: 165px;
+        margin: 15px 25px;
+        border: 3px solid rgb(41, 39, 70);
+        
+    }
+    .section-center-list ul li p{
+        color: white;
+        margin: 26px 0px;
+        font-size: 18px;
     }
 }
 
@@ -195,6 +411,43 @@ a{
         top: -360px;
     }
 
+    .section{
+        height: 1230px;
+    }
+    .select-blog-text{
+        font-size: 45px;
+    }
+    .select-blog-link{
+        font-size: 20px;
+    }
+    .section-center-list{
+        width: 100%;
+        height: 180px;
+        margin: 75px 0px;
+        background-color: rgb(26, 25, 48);
+        display: flex;
+    
+        
+    }
+    
+    .section-center-list-img{
+        width: 255px;
+        height: 150px;
+        margin: 15px 21px;
+        border: 3px solid rgb(41, 39, 70);
+        
+    }
+    .section-center-list ul li p{
+        color: white;
+        margin: 23px 0px;
+        font-size: 15.5px;
+    }
+    .footer-box p{
+        font-size: 35px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.918);
+    }
+
 }
 
 @media(max-width:820px){
@@ -225,6 +478,7 @@ a{
         /* display: none; */
         position: relative;
     }
+    
     .header-left-img{
         width: 320px;
         height: 330px;
@@ -244,7 +498,105 @@ a{
         display: flex;
         justify-content: center;
     }
+
+    /* -----section */
+    .section{
+        height: 2335px;
+    }
     
+    .section-center-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .select-blog-text{
+        font-size: 50px;
+    }
+    .select-blog-link{
+        font-size: 20px;
+    }
+    .section-center-list{
+        width: 98%;
+        height: 480px;
+        margin: 30px 0px;
+        background-color: rgb(26, 25, 48);
+        display: flex;
+        flex-direction:column ;
+        
+    }
+    
+    .section-center-list-img{
+        width: 80%;
+        height: 60%;
+        margin: 30px 68px;
+        border: 3px solid rgb(41, 39, 70);
+        
+    }
+    .section-center-list ul li p{
+        color: white;
+        margin: 8px 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+    /*           main */
+    .main{
+        height: 1350px;
+    }
+    .main-nav{
+        text-align: center;
+        padding: 45px;
+    }
+    .main-nav p{
+        font-size: 40px;
+        color: white;
+        margin: 30px 0px;
+    }
+    .main-nav p a{
+        font-size: 25px;
+        border: 1px solid white;
+        border-radius: 28px;
+        padding: 0px 15px;
+    }
+    .main-nav p a::after{
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        /* padding-right: 50px; */
+        padding: 3px;
+        background-size: 17px;
+        background-repeat: no-repeat;
+        background-image: url("./keyboard-right-arrow-button.png");
+        background-position: top 100% right 0%;
+    }
+    .main-nav p a:hover{
+        background-color: rgba(41, 39, 70, 0.938);
+        border: 1px solid rgba(41, 39, 70, 0.938);
+        transition: 0.6s;
+    }
+    
+    .main-center{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-center img{
+        width: 80%;
+        border: 5px solid rgba(41, 39, 70, 0.938);
+        margin: 25px 80px;
+    }
+
+    /* --------strike----------- */
+    .strike-box p{
+        color: white;
+        font-size: 50px;
+        padding: 35px 0px;    
+    }
+    .footer-box p{
+        font-size: 30px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.918);
+    }
 }
 
 
@@ -281,6 +633,60 @@ a{
         left: 150px;
         
     }
+
+    /*           main */
+    .main{
+        height: 1200px;
+    }
+    .main-nav{
+        text-align: center;
+        padding: 45px;
+    }
+    .main-nav p{
+        font-size: 40px;
+        color: white;
+        margin: 30px 0px;
+    }
+    .main-nav p a{
+        font-size: 25px;
+        border: 1px solid white;
+        border-radius: 28px;
+        padding: 0px 15px;
+    }
+    .main-nav p a::after{
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        /* padding-right: 50px; */
+        padding: 3px;
+        background-size: 17px;
+        background-repeat: no-repeat;
+        background-image: url("./keyboard-right-arrow-button.png");
+        background-position: top 100% right 0%;
+    }
+    .main-nav p a:hover{
+        background-color: rgba(41, 39, 70, 0.938);
+        border: 1px solid rgba(41, 39, 70, 0.938);
+        transition: 0.6s;
+    }
+    
+    .main-center{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-center img{
+        width: 80%;
+        border: 5px solid rgba(41, 39, 70, 0.938);
+        margin: 25px 60px;
+    }
+    /* --------sstrike------ */
+    .strike-box p{
+        color: white;
+        font-size: 45px;
+        padding: 35px 0px;    
+    }
 }
 
 @media(max-width:620px){
@@ -315,6 +721,58 @@ a{
         top: -1040px;
         left: 100px;
         
+    }
+
+    /* section */
+
+    .section{
+        height: 2335px;
+    }
+    
+    .section-center-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .select-blog-text{
+        font-size: 45px;
+    }
+    .select-blog-link{
+        font-size: 19px;
+    }
+    .section-center-list{
+        width: 98%;
+        height: 480px;
+        margin: 30px 0px;
+        background-color: rgb(26, 25, 48);
+        display: flex;
+        flex-direction:column ;
+        
+    }
+    
+    .section-center-list-img{
+        width: 80%;
+        height: 60%;
+        margin: 30px 50px;
+        border: 3px solid rgb(41, 39, 70);
+        
+    }
+    .section-center-list ul li p{
+        color: white;
+        margin: 8px 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+    /* --------sstrike------ */
+    .strike-box p{
+        color: white;
+        font-size: 45px;
+        padding: 35px 0px;    
+    }
+    .footer-box p{
+        font-size: 30px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.918);
     }
 }
 
@@ -357,6 +815,9 @@ a{
         top: -1040px;
         left: 60px;
         
+    }
+    .main{
+        height: 950px;
     }
 }
 
@@ -433,6 +894,143 @@ a{
     }
     .item{
         padding: 10px 33px;
+    }
+
+
+    /* section */
+
+    .section{
+        height: 1820px;
+    }
+    
+    .section-center-box{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .select-blog-text{
+        font-size: 32px;
+    }
+    .select-blog-link{
+        font-size: 14px;
+    }
+    .select-blog-link::before{
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        padding: 3px;
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-image: url("./layers.png");
+        background-position: top 100% left 0%;
+        
+    }
+    .section-center-list{
+        width: 98%;
+        height: 360px;
+        margin: 30px 0px;
+        background-color: rgb(26, 25, 48);
+        display: flex;
+        flex-direction:column ;
+        
+    }
+    
+    .section-center-list-img{
+        width: 80%;
+        height: 43%;
+        margin: 30px 25px;
+        border: 3px solid rgb(41, 39, 70);
+        
+    }
+    .section-center-list ul li p{
+        color: white;
+        margin: 8px 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+    /*           main */
+    .main{
+        height: 780px;
+    }
+    .main-nav{
+        text-align: center;
+        padding: 45px;
+    }
+    .main-nav p{
+        font-size: 30px;
+        color: white;
+        margin: 30px 0px;
+    }
+    .main-nav p a{
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 28px;
+        padding: 0px 15px;
+    }
+    .main-nav p a::after{
+        content: "";
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        /* padding-right: 50px; */
+        padding: 3px;
+        background-size: 13px;
+        /* background-color: aqua; */
+        background-repeat: no-repeat;
+        background-image: url("./keyboard-right-arrow-button.png");
+        background-position: top 100% right 0%;
+    }
+    .main-nav p a:hover{
+        background-color: rgba(41, 39, 70, 0.938);
+        border: 1px solid rgba(41, 39, 70, 0.938);
+        transition: 0.6s;
+    }
+    
+    .main-center{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-center img{
+        width: 80%;
+        border: 5px solid rgba(41, 39, 70, 0.938);
+        margin: 25px 35px;
+    }
+    /* --------sstrike------ */
+    .strike-box p{
+        color: white;
+        font-size: 30px;
+        padding: 35px 0px;    
+    }
+    .strike-form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .input-mail{
+        width: 300px;
+        height: 33  px;
+        border: 1px solid white;
+        border-radius: 28px;
+        outline: none;
+        padding-left: 25px;
+        margin: 10px 3px;
+    }
+    .strike-btn{
+        width: 100px;
+        height: 35px;
+        border-radius: 28px;
+        color: black;
+        margin: 10px 100px;
+    }
+    .footer-box p{
+        font-size: 15px;
+        margin: 15px 0px;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.918);
     }
 
     
